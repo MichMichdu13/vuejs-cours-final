@@ -49,7 +49,7 @@ data() {
 
       },
       topConcerts: [
-        {id: "angele", name: "Angèle", backgroundImage: "/images/angele.png", date: "15 DÉCEMBRE 2020", place: "Palais des sports", city: "Lyon"},
+        {id: "angele", name: "lallall", backgroundImage: "/images/angele.png", date: "15 DÉCEMBRE 2020", place: "Palais des sports", city: "Lyon"},
         {id: "damso", name: "Damso", backgroundImage: "/images/damso.jpeg", date: "16 DÉCEMBRE 2020", place: "Stade Vélodrome", city: "Marseille"},
         {id: "laylow", name: "Laylow", backgroundImage: "/images/laylow.jpeg", date: "17 DÉCEMBRE 2020", place: "La grande roue", city: "Annecy"},
         {id: "rihanna", name: "Rihanna", backgroundImage: "/images/rihanna.jpeg", date: "18 DÉCEMBRE 2020", place: "Parc des Princes", city: "Paris"},
