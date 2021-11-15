@@ -1,0 +1,10 @@
+/* Add CSS styles here! */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;600;800&display=swap');
+body {
+  font-family: sans-serif;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:0;
+}
+
