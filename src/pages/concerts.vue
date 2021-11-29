@@ -1,31 +1,55 @@
 <template>
   <div class="concerts">
-      <Welcome message=" lalllalalalallallalal"/>
-      <Nav />
+    <BannerConcert :bannerData= "texteConcert.bannerData"/>
+    <CardStyleMusic :titleCardStyle= "texteConcert.slider.titleSlider.titleCardStyle1" />
+    <CardStyleMusic :titleCardStyle= "texteConcert.slider.titleSlider.titleCardStyle2" />
+    <CardStyleMusic :titleCardStyle= "texteConcert.slider.titleSlider.titleCardStyle3" />
   </div>
 </template>
 
 <script>
-import Welcome from '../components/Welcome.vue'
-import Nav from '../components/nav-footer/Nav.vue'
+
+import BannerConcert from '../components/concert/bannerConcert.vue';
+import CardStyleMusic from '../components/concert/cardStyleMusic.vue';
 
 export default {
   name: 'Concerts',
   components: {
-    Welcome,
-    Nav,
+    BannerConcert,
+    CardStyleMusic,
+
   },
+  data() {
+    return {
+      texteConcert: {
+        bannerData:{
+          mainTitreData:{
+            titre1homeData: "Tout les concerts,",
+            soustitre1homeData: "en avant-première.",
+          },
+        },
+        slider:{
+          titleSlider:{
+            titleCardStyle1:"Rap/Rnb",
+            titleCardStyle2:"Variété française",
+            titleCardStyle3:"Electro",
+          }
+        }
+      }
+    }
+  }
 }
+
 </script>
 
 <style lang="scss">
 .concerts {
   color: white;
-  height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 </style>

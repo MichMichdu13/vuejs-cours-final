@@ -9,7 +9,7 @@
 
 <script>
 import carouselle from './carouselle.vue'
-import titleMainHome from './titleMainHome.vue'
+import titleMainHome from './titleMain.vue'
 import title2home from './titre2home.vue'
 import bigEtape from './bigEtape.vue'
 
