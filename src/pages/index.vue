@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import banner from '../components/homePage/banner/banner.vue';
 import phone from '../components/homePage/phone.vue';
 export default {
@@ -14,8 +15,19 @@ export default {
     banner,
     phone,
   },
-data() {
+   mounted () {
+		const bearerToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjM2MDQ0NjE4LCJleHAiOjE2Mzg2MzY2MTh9.L3GsjGPD6XaEPdjt6AVNRHXmjhXXWBcI2LyU3DjwP8E'
+    axios
+      .get('https://buuk-api.herokuapp.com/concerts', { headers: {"Authorization" : `Bearer ${bearerToken}`} })
+      .then(response => {
+        this.concertsApi = response.data.slice(0, 5)
+        console.log(this.concertsApi)
+
+      })
+  },
+  data() {
     return {
+      consertTest:[],
       texteSite: {
         bannerData:{
           mainTitreData:{
